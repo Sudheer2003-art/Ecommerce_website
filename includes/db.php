@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$dbname = 'ecommerce';
+$host = 'localhost:3306';
+$dbname = 'ecommerce1';
 $user = 'root';
-$password = '';
+$password = 'sudheer';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
@@ -11,3 +11,4 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 ?>
+
